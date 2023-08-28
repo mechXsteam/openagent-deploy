@@ -14,6 +14,12 @@ import regex
 
 from ._llm import LLM, LLMSession, SyncSession
 
+from dotenv import load_dotenv
+load_dotenv()
+
+# Access the secret key using the key name from the .env file
+secret_key = os.getenv("OPEN_API_KEY")
+
 
 class MalformedPromptException(Exception):
     pass
