@@ -33,12 +33,6 @@ class ChatLog(Log):
 memory = memory.SimpleMemory()
 
 
-# just to test if fastapi responding or not
-@app.get("/hello")
-def hello(request: Request):
-    print(request.headers)
-    return HTMLResponse("Hello World")
-
 
 @app.post("/chat")
 async def chat(message: str):
