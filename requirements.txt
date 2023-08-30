@@ -93,7 +93,6 @@ flatbuffers
 fonttools
 frozenlist
 gast
-GDAL @ file:///C:/Users/Aditya%20Kumar/Downloads/GDAL-3.4.3-cp310-cp310-win_amd64.whl#sha256=9893da5532a6c5dadc1fc3bc402ae29d161b7cf190d778f129da84d0e50baa29
 google-api-core
 google-api-python-client
 google-auth
