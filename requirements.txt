@@ -124,6 +124,5 @@ watchfiles==0.19.0
 whisper==1.1.10
 xlrd==2.0.1
 yelpapi==2.5.0
-youtube_search==2.1.2
 youtube_transcript_api==0.6.1
 zep_python==0.34
