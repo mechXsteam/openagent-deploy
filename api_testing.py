@@ -1,9 +1,9 @@
+import asyncio
+
+import nest_asyncio
+import pytest
 from chainlit.server import app
 from dotenv import load_dotenv
-from fastapi import Request
-from fastapi.responses import (
-    HTMLResponse,
-)
 from fastapi.responses import JSONResponse
 
 import openagent.compiler as compiler
@@ -13,6 +13,18 @@ from openagent.compiler._program import Log
 load_dotenv()
 
 compiler.llm = compiler.llms.OpenAI(model="gpt-3.5-turbo")
+
+
+@pytest.fixture(scope="session")
+def event_loop():
+    """
+    Don't close event loop at the end of every function decorated by
+    @pytest.mark.asyncio
+    """
+    loop = asyncio.new_event_loop()
+    nest_asyncio.apply()
+    yield loop
+    loop.close()
 
 
 class ChatLog(Log):
@@ -31,7 +43,6 @@ class ChatLog(Log):
 
 
 memory = memory.SimpleMemory()
-
 
 
 @app.post("/chat")
