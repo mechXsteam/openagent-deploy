@@ -45,7 +45,7 @@ ipython==8.14.0
 jsonschema==4.18.6
 langchain==0.0.253
 llama_hub==0.0.18
-lxml==4.9.3
+lxml
 matplotlib==3.7.2
 metal_sdk==2.0.1
 modelscope==1.8.1
