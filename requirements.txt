@@ -9,7 +9,7 @@ auth0_python==4.4.0
 azure_storage==0.37.0
 beautifulsoup4==4.12.2
 bibtexparser==1.4.0
-bilibili_api
+bilibili_api==9.1.0
 boto3==1.26.159
 chainlit==0.6.1
 chromadb==0.3.26
@@ -46,7 +46,7 @@ ipython==8.14.0
 jsonschema==4.18.6
 langchain==0.0.253
 llama_hub==0.0.18
-lxml
+lxml==4.9.3
 matplotlib==3.7.2
 metal_sdk==2.0.1
 modelscope==1.8.1
@@ -65,6 +65,7 @@ pandasai==0.8.2
 pdf2image==1.16.3
 pdfminer==20191125
 pexpect==4.8.0
+Pillow==9.5.0
 Pillow==10.0.0
 pinecone_text==0.5.2
 platformdirs==3.10.0
@@ -88,6 +89,7 @@ pytest==7.4.0
 python-dotenv==1.0.0
 python-socketio==5.8.0
 python_graphql_client==0.4.3
+PyYAML==6.0
 PyYAML==6.0.1
 qdrant_client==1.4.0
 rdflib==7.0.0
@@ -122,6 +124,5 @@ watchfiles==0.19.0
 whisper==1.1.10
 xlrd==2.0.1
 yelpapi==2.5.0
-youtube_search==2.1.2
 youtube_transcript_api==0.6.1
 zep_python==0.34
