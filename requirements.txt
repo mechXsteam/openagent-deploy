@@ -19,7 +19,7 @@ asttokens
 astunparse
 async-timeout
 asyncer
-atlassian
+atlassian==0.0.0
 attrs
 auth0-python
 Authlib
